@@ -1,0 +1,55 @@
+{
+  "name": "resumable-migrator",
+  "version": "1.0.0",
+  "description": "Resumable, exactly-once bulk data migration CLI (CSV → REST API) with atomic checkpointing, retries, and a verification phase.",
+  "keywords": [
+    "etl",
+    "data-migration",
+    "cli",
+    "csv",
+    "resumable",
+    "checkpoint",
+    "exactly-once",
+    "typescript"
+  ],
+  "license": "MIT",
+  "author": "Josue Jhonatas Calazans",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/josuejcalazans/resumable-migrator.git"
+  },
+  "bin": {
+    "resumable-migrator": "dist/cli.js"
+  },
+  "main": "dist/index.js",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "dev": "tsx src/cli.ts",
+    "start": "node dist/cli.js",
+    "test": "vitest run",
+    "test:cov": "vitest run --coverage",
+    "lint": "eslint . && prettier --check .",
+    "format": "prettier --write .",
+    "demo": "npm run build && node examples/demo.cjs"
+  },
+  "dependencies": {
+    "commander": "^12.1.0",
+    "papaparse": "^5.7.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@types/node": "^26.6.3",
+    "@types/papaparse": "^5.5.2",
+    "@vitest/coverage-v8": "^4.1.11",
+    "eslint": "^10.11.0",
+    "eslint-config-prettier": "^10.1.8",
+    "prettier": "^3.9.9",
+    "tsx": "^4.23.15",
+    "typescript": "^6.0.3",
+    "typescript-eslint": "^8.70.1",
+    "vitest": "^4.1.11"
+  }
+}
