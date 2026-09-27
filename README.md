@@ -7,6 +7,11 @@
 [![CI](https://github.com/josuejcalazans/resumable-migrator/actions/workflows/ci.yml/badge.svg)](https://github.com/josuejcalazans/resumable-migrator/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Node](https://img.shields.io/badge/node-%3E%3D20-brightgreen.svg)](https://nodejs.org)
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge/main)](https://github.com/codespaces/new?hide_repo_select=1&ref=main&repo=1391188963)
+
+> **Try it in the browser:** **Open in Codespaces** boots a ready-to-run Node 22
+> environment (~30s) — run `npm run demo` in the terminal and watch the migration
+> recover from injected failures live.
 
 ## Why
 
